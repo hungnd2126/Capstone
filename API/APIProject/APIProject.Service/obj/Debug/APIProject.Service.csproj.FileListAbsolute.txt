@@ -1,0 +1,71 @@
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Service.pdb
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll
+F:\APIProject\APIProject.Service\bin\Debug\EntityFramework.dll
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Data.pdb
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll.config
+F:\APIProject\APIProject.Service\bin\Debug\APIProject.Model.pdb
+F:\APIProject\APIProject.Service\bin\Debug\EntityFramework.xml
+F:\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csprojResolveAssemblyReference.cache
+F:\APIProject\APIProject.Service\obj\Debug\APIProject.Service.dll
+F:\APIProject\APIProject.Service\obj\Debug\APIProject.Service.pdb
+F:\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Service.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Data.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Model.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\obj\Debug\APIProject.Service.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\obj\Debug\APIProject.Service.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Service.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Data.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Model.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.pdb
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll.config
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Service.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Service.pdb
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\EntityFramework.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Data.pdb
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Data.dll.config
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Model.pdb
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\APIProject.Model.dll.config
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\EntityFramework.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csprojAssemblyReference.cache
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.csproj.CopyComplete
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Service\obj\Debug\APIProject.Service.pdb

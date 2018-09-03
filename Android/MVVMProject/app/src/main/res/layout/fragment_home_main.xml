@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+
+        <variable name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.home_main.HomeMainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/homeMainBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.92">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/homeMainTabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homeMainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/homeMainBarLayout"/>
+
+    </RelativeLayout>
+
+</layout>

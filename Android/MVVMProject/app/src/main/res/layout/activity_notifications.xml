@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.more.noti.NotiViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_noti_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:noti_adapter="@{viewModel.notiObservableList}"
+            tools:listitem="@layout/notification_item" />/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.more.profile.ProfileViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onUploadClick()}"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Ảnh đại diện" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_avatar"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp"
+                        app:imageUrl="@{viewModel.imageUrl}" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/profile_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:hint="Họ và tên"
+                        android:padding="5dp"
+                        android:text="@{viewModel.display_name}"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/profile_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:enabled="false"
+                        android:hint="Email"
+                        android:padding="5dp"
+                        android:text="@{viewModel.email}"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/profile_tknl"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:hint="Tài khoản Ngân lượng"
+                        android:padding="5dp"
+                        android:text="@{viewModel.tknl}"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/profile_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:hint="Số điện thoại"
+                        android:padding="5dp"
+                        android:text="@{viewModel.phone}"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{() -> viewModel.onClickAddress()}">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray"
+                            android:enabled="false"
+                            android:hint="Địa chỉ"
+                            android:padding="5dp"
+                            android:text="@{viewModel.address}"
+                            android:textSize="17sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/profile_bio"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:gravity="start"
+                        android:hint="Giới thiệu bản thân"
+                        android:padding="5dp"
+                        android:text="@{viewModel.bio}"
+                        android:textAlignment="textStart"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSaveProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:onClick="@{() -> viewModel.onClickSave()}"
+                    android:text="Xác nhận"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

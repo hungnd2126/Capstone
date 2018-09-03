@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/call">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/layout_item_avartar"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+       />
+    <TextView
+        android:id="@+id/CallerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="159dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Nguyễn Duy Hùng"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:elevation="1dp"
+        android:gravity="center"
+            android:paddingBottom="5sp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp">
+            <TextView
+                android:id="@+id/callState"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Đang gọi"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/callerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Nguyễn Duy Hùng"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/callDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingRight="5sp"
+                    android:text="00:00"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <ImageButton
+                    android:id="@+id/hangupButton"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/end_call_button"
+                    android:clickable="true"
+                    android:src="@drawable/hang_up" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/remoteVideo"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" />
+        <RelativeLayout
+            android:id="@+id/localVideo"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:elevation="1dp" />
+        <RelativeLayout
+            android:id="@+id/bottomPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:elevation="1dp">
+        </RelativeLayout>
+    </RelativeLayout>
+

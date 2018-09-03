@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.baonq.mvvmproject">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <application
+        android:name=".MvvmApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".ui.main.message.video_call.SinchService"></service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ui.main.detail_order.DetailActivity"
+            android:label="Chi Tiết"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.more.profile.ProfileActivity"
+            android:label="Thông tin cá nhân"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.more.account.AccountActivity"
+            android:label="Tài khoản cá nhân"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.more.phone.PhoneActivity"
+            android:label="Số điện thoại"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.more.credit.CreditActivity"
+            android:label="Phương thức thanh toán"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.more.noti.NotiActivity"
+            android:label="Thông báo"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.accept_offer.AcceptOfferActivity"
+            android:label="Chi tiết yêu cầu"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.singleTripManage.STMActivity"
+            android:label="Chuyến đi"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.addtrip.AddTripActivity"
+            android:label="Tạo chuyến đi"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.main.make_offer.MakeOfferActivity"
+            android:label="Tạo đề nghị"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.addpost.AddPostActivity"
+            android:label="Tạo đơn hàng"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.main.home_buyer_offer.BuyerOfferAcivity"
+            android:label="Danh sách cần mua"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.message.messages.CustomHolderMessagesActivity"
+            android:label="Tin nhắn"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleInstance"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.main.payment.ui.activity.PaymentActivity"
+            android:label="Thanh toán"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.viewProfile.ViewProfileActivity"
+            android:label="Thông tin"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+
+        <activity android:name=".ui.main.payment.ui.activity.CheckOutActivity">
+
+
+        </activity>
+        <activity
+            android:name=".ui.main.payment.ui.activity.CheckOrderActivity"
+            android:label="Hóa đơn"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.delivery.DeliveryActivity"
+            android:label="Chọn chuyến đi phù hợp"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+
+        <receiver android:name=".service.BootReceiver">
+            <intent-filter>
+                <action android:name="vn.baonq.mvvmProject.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".service.SignalRService" />
+
+        <activity
+            android:name=".ui.payment.PayPalActivity"
+            android:label="Thanh toán"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleInstance"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.main.Payment_Type.PaymentTypeActivity"
+            android:label="Phương thức thanh toán"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleInstance"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.complete_offer.CompleteOfferActivity"
+            android:label="Xác nhận đơn hàng"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleInstance"
+                android:value=".ui.main.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.main.time_line.TimeLineActivity"
+            android:label="Thông tin vận chuyển"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:label="Vị trí người vận chuyển"
+            android:parentActivityName=".ui.main.time_line.TimeLineActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleInstance"
+                android:value=".ui.main.time_line.TimeLineActivity" />
+        </activity>
+        <activity
+            android:name=".ui.main.message.video_call.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            >
+
+        </activity>
+        <activity android:name=".ui.main.message.video_call.CallScreenActivity"/>
+
+        <activity android:name=".ui.main.message.video_call.IncomingCallScreenActivity" android:screenOrientation="portrait"
+            android:noHistory="true"/>
+
+        <activity android:name=".ui.main.message.video_call.PlaceCallActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

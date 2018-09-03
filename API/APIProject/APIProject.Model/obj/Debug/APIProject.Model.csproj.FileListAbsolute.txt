@@ -1,0 +1,109 @@
+F:\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll
+F:\APIProject\APIProject.Model\bin\Debug\APIProject.Model.pdb
+F:\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csprojResolveAssemblyReference.cache
+F:\APIProject\APIProject.Model\obj\Debug\APIProject.Model.dll
+F:\APIProject\APIProject.Model\obj\Debug\APIProject.Model.pdb
+F:\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\APIProject.Model.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\obj\Debug\APIProject.Model.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\obj\Debug\APIProject.Model.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\System.Web.Http.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\System.Web.Http.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\HDDT\Bao\APIProject\APIProject.Model\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll.config
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\APIProject.Model.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.dll
+C:\Users\LENOVO\Documents\Visual Studio 2017\Projects\Doing\Capstone\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.pdb
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll.config
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\APIProject.Model.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\APIProject.Model.pdb
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Owin.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csprojAssemblyReference.cache
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csproj.CoreCompileInputs.cache
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.csproj.CopyComplete
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.dll
+C:\Users\hungn\Documents\CP\Project\Develop\API\APIProject\APIProject.Model\obj\Debug\APIProject.Model.pdb

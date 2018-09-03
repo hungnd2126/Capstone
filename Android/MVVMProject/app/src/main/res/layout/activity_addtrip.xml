@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.addtrip.AddTripViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/gray">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/travel_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:completionThreshold="1"
+                    android:hint="Nơi xuất phát"
+                    android:padding="5dp"
+                    android:textSize="17sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/gray">
+
+                <AutoCompleteTextView
+                    android:id="@+id/travel_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:completionThreshold="1"
+                    android:hint="Nơi bạn đến"
+                    android:padding="5dp"
+                    android:textSize="17sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/gray">
+
+                <EditText
+                    android:id="@+id/from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/calendar"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Ngày bạn đi"
+                    android:inputType="date"
+                    android:onClick="@{() -> viewModel.getTime1()}"
+                    android:padding="5dp"
+                    android:textSize="17sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/gray">
+
+                <EditText
+                    android:id="@+id/to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/calendar"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Ngày bạn về"
+                    android:inputType="date"
+                    android:onClick="@{() -> viewModel.getTime2()}"
+                    android:padding="5dp"
+                    android:textSize="17sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/button"
+                android:onClick="@{() -> viewModel.onSubmitClick()}"
+                android:text="Xác nhận"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

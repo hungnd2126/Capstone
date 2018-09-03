@@ -1,0 +1,42 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.home.HomeItemViewModel"/>
+    </data>
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo một chuyến đi để có thể nhận những gợi ý phù hợp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:layout_marginStart="15dp" />
+
+
+
+        <Button
+            android:id="@+id/btnAddTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:layout_margin="15dp"
+            android:text="Tạo chuyến đi"
+            android:background="@drawable/button"
+            android:textSize="18sp"
+            android:textColor="@color/button"
+           />
+
+    </LinearLayout>
+</layout>

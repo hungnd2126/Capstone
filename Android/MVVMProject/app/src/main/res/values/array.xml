@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item id="1">Đã khởi hành </item>
+        <item id="2">Đã đến nơi</item>
+        <item id="3">Đã mua được hàng</item>
+        <item id="4">Đã về</item>
+        <item id="5">Có thể giao hàng</item>
+        <item id="6">Giao hàng thành công</item>
+        <item id="7">Không thể mua hàng</item>
+        <item id="8">Đơn hàng đã bị hủy</item>
+
+    </string-array>
+</resources>

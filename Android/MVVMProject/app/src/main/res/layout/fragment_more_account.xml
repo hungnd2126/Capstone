@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/btnAccountDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/cardview_light_background"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="Tài khoản"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_action_name_back" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Đổi mật khẩu"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Chúng tôi sẽ gửi đường dẫn phục hồi về email của bạn"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <Button
+            android:id="@+id/btnAccountSend"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:text="Gửi"
+            android:textSize="20dp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/cardview_light_background" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Email"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Email của bạn ?" />
+
+        <Button
+            android:id="@+id/btnAccountSave"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:text="Lưu"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

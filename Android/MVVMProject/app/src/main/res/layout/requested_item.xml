@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.order.Requested.RequestedItemViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rq_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp">
+
+        <com.daimajia.swipe.SwipeLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftEdgeSwipeOffset="0dp"
+            app:rightEdgeSwipeOffset="0dp">
+            <LinearLayout
+                android:id="@+id/lo_Update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_tab_2"
+                android:onClick="@{() -> viewModel.updateItem()}" >
+
+                <ImageView
+                    android:id="@+id/update"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_update"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Cập nhật đơn hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lo_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/endCall"
+                android:onClick="@{() -> viewModel.deleteItem()}">
+                <ImageView
+                    android:id="@+id/trash"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/trash" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Xóa đơn hàng"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.onItemClick()}"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/rq_item_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{viewModel.createdDate}"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="match_parent"
+                            app:imageUrl="@{viewModel.imageUrl}" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@{viewModel.productName}"
+                                android:textSize="20sp"
+                                android:maxLines="2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rq_item_title"
+                                android:layout_weight="2"
+                                android:text="@{viewModel.numberOffer}"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@{viewModel.bestPrice}"
+                                android:textColor="@color/text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/backgroundTimeline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red_dark"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+                    />
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        android:paddingLeft="5dp"
+                        android:text="Đơn hàng hết hạn"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+        </LinearLayout>
+        </com.daimajia.swipe.SwipeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

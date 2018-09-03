@@ -1,0 +1,138 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.message.dialogs.DialogItemViewModel" />
+
+    </data>
+    <android.support.v7.widget.CardView
+
+        android:id="@id/dialogRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> viewModel.onItemClick()}">
+
+        <RelativeLayout
+            android:id="@id/dialogContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@id/dialogAvatar"
+                android:layout_width="@dimen/dialog_avatar_width"
+                android:layout_height="@dimen/dialog_avatar_height"
+                android:layout_margin="16dp"
+                app:imageUrl="@{viewModel.avartar_url}"/>
+
+            <TextView
+                android:id="@id/dialogName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="19dp"
+                android:layout_toEndOf="@id/dialogAvatar"
+                android:layout_toLeftOf="@id/dialogDate"
+                android:layout_toRightOf="@id/dialogAvatar"
+                android:layout_toStartOf="@id/dialogDate"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@{viewModel.dialogName}"
+                />
+
+            <TextView
+                android:id="@id/dialogDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:text="@{viewModel.lastMessage_create}"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialogName"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/dialogAvatar"
+                android:layout_toLeftOf="@+id/dialogUnreadBubble"
+                android:layout_toRightOf="@id/dialogAvatar"
+                android:layout_toStartOf="@+id/dialogUnreadBubble">
+
+
+                <TextView
+                    android:id="@id/dialogLastMessage"
+                    android:layout_width="237dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/dialogLastMessageUserAvatar"
+                    android:layout_toRightOf="@id/dialogLastMessageUserAvatar"
+                    android:ellipsize="end"
+                    android:gravity="top"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:text="@{viewModel.lastMessage}" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/onlineIndicator"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignRight="@id/dialogAvatar"
+                android:layout_alignTop="@id/dialogAvatar"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_bubble_online"
+                />
+
+            <TextView
+                android:id="@id/dialogUnreadBubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dialogDate"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bubble_circle"
+                android:ellipsize="end"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:gravity="center"
+                android:lines="1"/>
+
+            <FrameLayout
+                android:id="@id/dialogDividerContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:id="@id/dialogDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dialog_divider"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView></layout>

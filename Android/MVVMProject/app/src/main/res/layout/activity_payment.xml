@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.payment.ui.activity.PaymentViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/activity_main_editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:enabled="false"
+                    android:hint="Tài khoản ngân lượng"
+                    android:padding="5dp"
+                    android:textSize="17sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/activity_main_editAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:background="@color/gray"
+                    android:hint="Tổng số tiền"
+                    android:padding="5dp"
+                    android:textSize="17sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/activity_main_btnSendOrder"
+                style="@style/WaveButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/HEIGHT_EDIT_TEXT"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button"
+                android:text="Gửi yêu cầu"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/activity_main_progressView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressMode="indeterminate"
+            app:pv_progressStyle="@style/CircularProgressDrawableStyle" />
+
+    </RelativeLayout>
+
+</layout>
+
+
+

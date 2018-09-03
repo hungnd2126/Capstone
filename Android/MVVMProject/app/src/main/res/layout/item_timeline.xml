@@ -1,0 +1,106 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+    <data>
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.time_line.TimeLineItemViewModel"/>
+    </data>
+    <com.rey.material.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray">
+
+        <RelativeLayout
+            android:id="@+id/slide"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/from"
+                    android:layout_width="3dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/color_tab_2"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/to"
+                    android:layout_width="3dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/color_tab_2"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="13.5sp"
+                    android:layout_height="13.5sp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_marker" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/line"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="@{() -> viewModel.onItemClick()}"
+
+                android:layout_marginEnd="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{viewModel.time}" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp"
+                    android:text="@{viewModel.status}"
+                    android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="@{viewModel.place}"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </com.rey.material.widget.LinearLayout>
+</layout>

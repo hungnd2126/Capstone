@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.addpost.AddPostViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!--part 1-->
+            <LinearLayout
+                android:id="@+id/addpost_part1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switchFill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:enabled="true"
+                        android:text="Mua hàng từ (ebay, walmart, amazon...)" />
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:id="@+id/expandableURL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        app:ael_expanded="false"
+                        app:ael_interpolator="bounce">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray"
+                            android:paddingTop="5dp">
+
+                            <EditText
+                                android:id="@+id/URL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:hint="Nhập đường dẫn của website"
+                                android:minHeight="45dp"
+                                android:padding="5dp"
+                                android:textSize="17sp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="@{() -> viewModel.onUploadClick()}"
+                    android:src="@drawable/icon_upload"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray"
+                        android:hint="Tên sản phẩm"
+                        android:minHeight="45dp"
+                        android:padding="5dp"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.rey.material.widget.LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/product_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray"
+                            android:hint="Giá sản phẩm"
+                            android:inputType="number"
+                            android:minHeight="45dp"
+                            android:padding="5dp"
+                            android:textSize="17sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <EditText
+
+                        android:id="@+id/editText2"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:hint=""
+                        android:inputType="number"
+                        android:text="VND" />
+                </com.rey.material.widget.LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/product_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray"
+                        android:hint="Số lượng"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/gray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray"
+                        android:hint="Mô tả thêm"
+                        android:inputType="textMultiLine"
+                        android:minHeight="45dp"
+                        android:padding="5dp"
+                        android:textSize="17sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:onClick="@{() -> viewModel.onNextClick(2, 1)}"
+                    android:text="Kế tiếp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!--part 2-->
+            <LinearLayout
+                android:id="@+id/addpost_part2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Hãy cho chúng tôi thêm thông tin"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/buy_from_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/buy_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray"
+                            android:clickable="true"
+                            android:completionThreshold="1"
+                            android:editable="false"
+                            android:hint="Nơi mua"
+                            android:minHeight="45dp"
+                            android:onClick="@{() -> viewModel.onClickPlace(1)}"
+                            android:padding="5dp"
+                            android:textSize="17sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/bf_auto_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray"
+                        android:visibility="gone">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/buy_from_auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray"
+                            android:clickable="true"
+                            android:completionThreshold="1"
+                            android:hint="Nơi Mua"
+                            android:minHeight="45dp"
+                            android:padding="5dp"
+                            android:textSize="17sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/delivery_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray"
+                            android:clickable="true"
+                            android:completionThreshold="1"
+                            android:editable="false"
+                            android:hint="Nơi nhận"
+                            android:minHeight="45dp"
+                            android:onClick="@{() -> viewModel.onClickPlace(2)}"
+                            android:padding="5dp"
+                            android:textSize="17sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/dl_auto_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray"
+                        android:visibility="gone">
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/receive_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:drawableRight="@drawable/calendar"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="Ngày nhận mong muốn"
+                            android:inputType="date"
+                            android:minHeight="45dp"
+                            android:onClick="@{() -> viewModel.getTime()}"
+                            android:padding="5dp"
+                            android:textSize="17sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/shippingFee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray"
+                            android:hint="Phí vận chuyển đề nghị"
+                            android:inputType="numberDecimal"
+                            android:minHeight="45dp"
+                            android:padding="5dp"
+                            android:textSize="17sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="Tổng cộng :"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/txt_Total"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp">
+
+                        <Switch
+                            android:id="@+id/switchDeposit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:enabled="true"
+                            android:text="Thanh toán trước" />
+
+                    </LinearLayout>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:id="@+id/expandableLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        app:ael_expanded="true"
+                        app:ael_interpolator="bounce">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray">
+
+                            <EditText
+                                android:id="@+id/TotalTranfer"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/gray"
+                                android:hint="Số tiền trả trước"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textSize="17sp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/btnPrevious"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button"
+                        android:onClick="@{() -> viewModel.onNextClick(1, 0)}"
+                        android:text="Quay lại"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnNext2"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button"
+                        android:onClick="@{() -> viewModel.onCompleteClick()}"
+                        android:text="Hoàn tất"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

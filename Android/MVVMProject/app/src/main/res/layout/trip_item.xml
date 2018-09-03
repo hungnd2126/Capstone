@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.order.Requested.RequestedItemViewModel" />
+    </data>
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="8dp"
+        android:padding="15dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/trip_date"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="May 26, 2016"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/trip_name"
+                android:layout_width="match_parent"
+                android:layout_below="@id/trip_date"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Bangkok, Thailand - Ho Chi Minh City, VN"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:id="@+id/delivered"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentBottom="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="Delivered"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/delivered_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="0"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/earning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Earnings"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/earning_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="$0"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

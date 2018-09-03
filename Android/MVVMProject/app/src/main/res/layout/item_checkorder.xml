@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_checkorder_txtName"
+        style="@style/CaptionTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="left"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/item_checkorder_txtValue"
+        style="@style/CaptionTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="6"
+        android:gravity="left"
+        android:textColor="@color/black" />
+
+</LinearLayout>

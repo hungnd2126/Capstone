@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6ad3339fbfe84d6eaf1eb063f67ebcc5" Name="Diagram1" ZoomLevel="41">
+        <EntityTypeShape EntityType="CPModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CPModel.AspNetRole" Width="1.5" PointX="0.75" PointY="15.125" />
+        <EntityTypeShape EntityType="CPModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="14.375" />
+        <EntityTypeShape EntityType="CPModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="11.875" />
+        <EntityTypeShape EntityType="CPModel.AspNetUser" Width="1.5" PointX="3" PointY="11.375" />
+        <EntityTypeShape EntityType="CPModel.Category" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CPModel.City" Width="1.5" PointX="6" PointY="7.375" />
+        <EntityTypeShape EntityType="CPModel.Country" Width="1.5" PointX="3.75" PointY="7.625" />
+        <EntityTypeShape EntityType="CPModel.EcommerceWebsite" Width="1.5" PointX="6" PointY="3.75" />
+        <EntityTypeShape EntityType="CPModel.Image" Width="1.5" PointX="10.5" PointY="19.75" />
+        <EntityTypeShape EntityType="CPModel.Notification" Width="1.5" PointX="5.25" PointY="29.375" />
+        <EntityTypeShape EntityType="CPModel.Offer" Width="1.5" PointX="10.5" PointY="13.625" />
+        <EntityTypeShape EntityType="CPModel.Order" Width="1.5" PointX="12.75" PointY="13.5" />
+        <EntityTypeShape EntityType="CPModel.Post" Width="1.5" PointX="8.25" PointY="12.75" />
+        <EntityTypeShape EntityType="CPModel.Rating" Width="1.5" PointX="15" PointY="14.125" />
+        <EntityTypeShape EntityType="CPModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="CPModel.TrackingOrder" Width="1.5" PointX="15" PointY="18.75" />
+        <EntityTypeShape EntityType="CPModel.Transaction" Width="1.5" PointX="18" PointY="14" />
+        <EntityTypeShape EntityType="CPModel.Trip" Width="1.5" PointX="8.25" PointY="8.125" />
+        <AssociationConnector Association="CPModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="CPModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Offers_dbo_AspNetUsers_BuyerId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Offers_dbo_AspNetUsers_TravellerId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Orders_dbo_AspNetUsers_BuyerId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Orders_dbo_AspNetUsers_TravellerId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRatedId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRateId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Transactions_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="CPModel.FK_Notifications_AspNetUsers" />
+        <AssociationConnector Association="CPModel.FK_Posts_AspNetUsers" />
+        <AssociationConnector Association="CPModel.FK_dbo_Cities_dbo_Countries_CountryID" />
+        <AssociationConnector Association="CPModel.FK_dbo_Posts_dbo_Cities_BuyFromId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Posts_dbo_Cities_DeliveryToId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Trips_dbo_Cities_FromCityId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Trips_dbo_Cities_ToCityId" />
+        <AssociationConnector Association="CPModel.FK_EcommerceWebsite_Countries" />
+        <AssociationConnector Association="CPModel.FK_Posts_Countries" />
+        <AssociationConnector Association="CPModel.FK_dbo_Images_dbo_Posts_PostId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Offers_dbo_Posts_PostId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Offers_dbo_Trips_TripId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Orders_dbo_Offers_OfferId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Ratings_dbo_Orders_OrderId" />
+        <AssociationConnector Association="CPModel.FK_dbo_Transactions_dbo_Orders_OrderId" />
+        <AssociationConnector Association="CPModel.FK_TrackingOrders_Orders" />
+        <AssociationConnector Association="CPModel.FK_Transactions_Posts" />
+        <AssociationConnector Association="CPModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

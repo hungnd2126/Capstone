@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Travel And Ship</string>
+    <string name="tab_1">Label 1</string>
+    <string name="tab_2">Label 2</string>
+    <string name="tab_3">Label 3</string>
+    <string name="tab_4">Label 4</string>
+    <string name="tab_5">Label 5</string>
+
+    <string name="menu_1">Menu 1</string>
+    <string name="menu_2">Menu 2</string>
+    <string name="menu_3">Menu 3</string>
+    <string name="menu_4">Menu 4</string>
+    <string name="menu_5">Menu 5</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">380643922443743</string>
+    <string name="fb_login_protocol_scheme">fb380643922443743</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyC9PHKUolXTJATJYClo20KYoqOXEIU1Rmw
+    </string>
+    <string name="error_disconnect">Bạn cần kết nối internet</string>
+    <string name="error_name_order">Bạn cần nhập họ tên người thanh toán</string>
+    <string name="error_description">Bạn cần nhập mô tả</string>
+    <string name="error_email">Bạn cần nhập email người thanh toán</string>
+    <string name="error_mobile">Bạn cần nhập số điện thoại người thanh toán</string>
+    <string name="error_address">Bạn cần nhập địa chỉ người thanh toán</string>
+    <string name="error_amount">Bạn cần nhập số tiền đơn hàng cần thanh toán. Số tiền phải lớn hơn 2000VND</string>
+
+    <string name="error_01">Lỗi không xác định</string>
+    <string name="error_02">merchant_id không tồn tại</string>
+    <string name="error_04">checksum không đúng</string>
+    <string name="error_05">Không ghi nhận được đơn hàng trên cổng thanh toán</string>
+    <string name="error_06">token_code không tồn tại hoặc không hợp lệ</string>
+    <string name="error_07">Đơn hàng chưa được thanh toán</string>
+    <string name="error_09">receiver_email không tồn tại</string>
+    <string name="error_11">receiver_email đang bị khóa hoặc phong tỏa không thể giao dịch</string>
+    <string name="error_20">function không đúng</string>
+    <string name="error_21">version không đúng hoặc không tồn tại</string>
+    <string name="error_22">Thiếu tham số đầu vào</string>
+    <string name="error_23">order_code mã đơn hàng không hợp lệ</string>
+    <string name="error_24">total_amount không hợp lệ</string>
+    <string name="error_25">currency không hợp lệ</string>
+    <string name="error_26">language không hợp lệ</string>
+    <string name="error_27">return_url không hợp lệ</string>
+    <string name="error_28">cancel_url không hợp lệ</string>
+    <string name="error_29">notify_url không hợp lệ</string>
+    <string name="error_30">buyer_fullname không hợp lệ</string>
+    <string name="error_31">buyer_email không hợp lệ</string>
+    <string name="error_32">buyer_mobile không hợp lệ</string>
+    <string name="error_33">buyer_address không hợp lệ</string>
+    <string name="session_timeout">Session timeout</string>
+    <string name="video_call">Video call</string>
+
+    <string name="error_lake_of_info">Bạn cần nhập đầy đủ thông tin</string>
+
+</resources>

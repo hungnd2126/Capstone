@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btnNoti"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNoti"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/cardview_light_background"
+                    android:gravity="center"
+                    android:paddingTop="0dp"
+                    android:text="Thông báo"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteY="2dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_action_name_back" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/cardview_shadow_start_color" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Cập nhật trạng thái theo đơn hàng"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Thông báo về các hoạt động của bạn trên TAS"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <Switch
+                android:id="@+id/sEmail1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thông báo qua email"
+                android:textSize="20dp" />
+
+            <Switch
+                android:id="@+id/sNoti1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bật thông báo"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/cardview_shadow_start_color" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/cardview_shadow_start_color" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Thông báo có đơn hàng mới"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Thông báo và gửi email cho bạn về đơn hàng mới trong khi bạn đang trên đường đi xa."
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <Switch
+                android:id="@+id/sEmail2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thông báo qua email"
+                android:textSize="20dp" />
+
+            <Switch
+                android:id="@+id/sNoti2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bật thông báo"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

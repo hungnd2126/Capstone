@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tạo đơn hàng"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nơi sản phẩm sẽ đến ?"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hãy cung cấp thêm thông tin chi tiết về hành trình giao hàng."
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giao hàng từ"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtItemDeliveryFrom"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:hint="thành phố"
+                android:ems="10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giao hàng đến"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtItemDeliveryTo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:hint="thành phố"
+                android:ems="10"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="thông tin thêm về ngày giao hàng"
+
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtItemDeliveryDate"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtItemNote"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="thêm ghi chú" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:text="Kế tiếp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

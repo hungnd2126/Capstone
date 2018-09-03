@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.delivery.DeliveryViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuyến đi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="30sp"
+                android:layout_marginStart="15dp" />
+
+
+
+            <Button
+                android:id="@+id/btnAddTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"
+                android:text="Tạo chuyến đi"
+                android:background="@drawable/button"
+                android:textSize="18sp"
+                android:textColor="@color/button"
+                android:onClick="@{() -> viewModel.onAddTripClick()}"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/deliveredRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:delivery_adapter="@{viewModel.deliveryObservableList}"
+                tools:listitem="@layout/delivery_item" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

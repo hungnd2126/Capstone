@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/primary_material_light</item>
+        <item name="colorPrimaryDark">@color/primary_dark_material_light</item>
+        <item name="colorAccent">@color/accent_material_light</item>
+
+        <!-- Customize your theme here.
+    <item name="colorBackground">@color/background_material_light</item>
+    <item name="colorForeground">@color/foreground_material_light</item>*-->
+
+
+    </style>
+
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+
+    </style>
+
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/color_tab_2</item>
+        <item name="colorControlActivated">@color/color_tab_2</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="setting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Proccess" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_tab_2</item>
+    </style>
+
+    <style name="mythem" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="H_them" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorButtonNormal</item>
+    </style>
+
+    <style name="StyledTilEditTextFloatingLabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">13dp</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+
+    </style>
+
+    <style name="StyledTilEditTextLayout">
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <!-- LinearLayout -->
+    <style name="LinearLayoutRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="rd_rippleColor">@color/gray</item>
+        <item name="rd_cornerRadius">4dp</item>
+    </style>
+
+    <style name="FontRoboto" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">@dimen/TEXT_SIZE_LARGE</item>
+    </style>
+
+    <style name="CaptionTextStyle" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">@dimen/TEXT_SIZE_NORMAL</item>
+    </style>
+
+    <style name="ButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="rd_rippleColor">@color/gray</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="WaveButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="rd_rippleColor">@color/gray</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">18dp</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/colorPrimary</item>
+    </style>
+</resources>

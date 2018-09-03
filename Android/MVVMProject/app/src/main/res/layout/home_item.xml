@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.home.HomeItemViewModel">
+
+        </variable>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:onClick="@{() -> viewModel.viewDetail()}">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp">
+
+            <!--30dp-->
+            <LinearLayout
+                android:id="@+id/layout_item_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/layout_item_avartar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:civ_border_color="#FF000000"
+                    app:imageUrl="@{viewModel.UserAvartar}" />
+
+                <TextView
+                    android:id="@+id/layout_item_ower_post"
+                    android:layout_width="369dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="@{viewModel.Username}"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/layout_item_time_active2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:text="@{viewModel.dateCreated}"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!--100dp-->
+            <LinearLayout
+                android:id="@+id/layout_item_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_item_head"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/layout_item_imageURL"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="@{() -> viewModel.viewDetail()}"
+                    app:imageUrl="@{viewModel.ImageUrl}" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/layout_item_title"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:paddingBottom="5dp"
+                        android:text="@{viewModel.productName}"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="141dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:text="Mua từ"
+                            android:textSize="12sp" />
+
+                        <TextView
+
+                            android:id="@+id/layout_item_delivery_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:text="@{viewModel.buyFrom}"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_item_title"
+                        android:layout_weight="10"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/layout_item_before"
+                                android:layout_width="141dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:text="Chuyển đến"
+                                android:textSize="12sp" />
+
+                            <TextView
+
+                                android:id="@+id/layout_item_delivery_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:text="@{viewModel.deliveryTo}"
+
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="143dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:text="Trước ngày"
+                                android:textSize="12sp" />
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:text="@{viewModel.deliveryDate}"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--spaceline-->
+            <LinearLayout
+                android:id="@+id/space_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_item_info"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#CCCCCC" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_item_info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="Phí vận chuyển"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/layout_item_Reward_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Từ"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/layout_item_Reward_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:paddingLeft="10dp"
+                        android:text="@{viewModel.shippingFee}"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Đã thanh toán" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10sp"
+                        android:text="@{viewModel.deposit}"
+                        android:textColor="@color/text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="12"
+                        android:gravity="center_vertical"
+                        android:text="Giá"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/layout_item_Original_price"
+                        android:layout_width="177dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="@{viewModel.price}"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="12"
+                        android:gravity="center_vertical|right"
+                        android:paddingBottom="5dp"
+                        android:text="@{viewModel.OfferSize}"
+                        android:textColor="@color/text"
+
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="5dp">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_3"
+                        android:onClick="@{() -> viewModel.makeOffer()}"
+                        android:text="Nhận mua"
+                        android:textColor="@drawable/color_button" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

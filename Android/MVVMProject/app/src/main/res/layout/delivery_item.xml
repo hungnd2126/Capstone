@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.delivery.DeliveryItemViewModel" />
+    </data>
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="8dp"
+        android:padding="15dp"
+        app:cardCornerRadius="10dp"
+        android:onClick="@{() -> viewModel.onItemClick()}">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/trip_id"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{viewModel.TripId}"
+                android:textSize="12dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/create_date"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{viewModel.CreatedDate}"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/trip_name"
+                android:layout_width="match_parent"
+                android:layout_below="@id/create_date"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{viewModel.Name}"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/trip_date"
+                android:layout_width="match_parent"
+                android:layout_below="@id/trip_name"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{viewModel.TravelDate}"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/delivered"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="51dp"
+                android:layout_alignParentBottom="true"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="Đơn hàng"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/delivered_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@{viewModel.NumberOrder}"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="#CCCCCC"/>
+            <LinearLayout
+                android:id="@+id/earning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Hiện có"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/earning_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@{viewModel.Earning}"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

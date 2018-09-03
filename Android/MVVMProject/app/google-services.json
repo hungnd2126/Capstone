@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "881008056418",
+    "firebase_url": "https://travel-and-ship-1e84e.firebaseio.com",
+    "project_id": "travel-and-ship-1e84e",
+    "storage_bucket": "travel-and-ship-1e84e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881008056418:android:c5e96e4514d0eb20",
+        "android_client_info": {
+          "package_name": "vn.baonq.mvvmproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881008056418-mlc4kvds8dje0sabbu32a5colbb96kch.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "881008056418-mlc4kvds8dje0sabbu32a5colbb96kch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9PHKUolXTJATJYClo20KYoqOXEIU1Rmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

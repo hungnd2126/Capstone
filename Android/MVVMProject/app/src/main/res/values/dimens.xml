@@ -1,0 +1,46 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="bottom_navigation_elevation">8dp</dimen>
+
+    <dimen name="bottom_navigation_min_width">104dp</dimen>
+    <dimen name="bottom_navigation_max_width">168dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="bottom_navigation_icon">24dp</dimen>
+
+    <dimen name="bottom_navigation_padding_top_active">6dp</dimen>
+    <dimen name="bottom_navigation_padding_top_inactive">8dp</dimen>
+    <dimen name="bottom_navigation_padding_bottom">7dp</dimen>
+    <dimen name="bottom_navigation_padding_left">12dp</dimen>
+    <dimen name="bottom_navigation_padding_right">12dp</dimen>
+
+    <dimen name="bottom_navigation_text_size_active">14sp</dimen>
+    <dimen name="bottom_navigation_text_size_inactive">12sp</dimen>
+
+    <!-- Small -->
+    <dimen name="bottom_navigation_small_active_min_width">96dp</dimen>
+    <dimen name="bottom_navigation_small_active_max_width">168dp</dimen>
+    <dimen name="bottom_navigation_small_inactive_min_width">64dp</dimen>
+    <dimen name="bottom_navigation_small_inactive_max_width">96dp</dimen>
+
+    <dimen name="bottom_navigation_small_padding_top_active">6dp</dimen>
+    <dimen name="bottom_navigation_small_padding_top">16dp</dimen>
+    <dimen name="bottom_navigation_small_padding_bottom">16dp</dimen>
+
+    <dimen name="bottom_navigation_small_selected_width_difference">10dp</dimen>
+    <dimen name="TEXT_SIZE_NORMAL">15dp</dimen>
+    <dimen name="TEXT_SIZE_LARGE">18dp</dimen>
+    <dimen name="HEIGHT_EDIT_TEXT">48dp</dimen>
+    <dimen name="border">1dp</dimen>
+    <dimen name="action_bar_height">71dp</dimen>
+    <dimen name="action_bar_width">71dp</dimen>
+    <dimen name="icon_width">52dp</dimen>
+    <dimen name="icon_height">52dp</dimen>
+    <dimen name="alert_bar_height">30dp</dimen>
+    <dimen name="alert_text">14sp</dimen>
+    <dimen name="preview_width">90dp</dimen>
+    <dimen name="preview_height">78dp</dimen>
+    <dimen name="preview_rightMargin">24dp</dimen>
+    <dimen name="preview_bottomMargin">75dp</dimen>
+</resources>

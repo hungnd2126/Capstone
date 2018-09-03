@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="endCall">#cb1e28</color>
+    <color name="startCall">#6aadbf</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/accent_material_light</color>
+
+    <color name="button">#ffffff</color>
+    <color name="space">#e4f4fb</color>
+    <color name="text">#4d8ed5</color>
+
+
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+
+    <color name="color_notification_back">#ffcd33</color>
+    <color name="color_notification_text">#3E4757</color>
+    <color name="black">#000000</color>
+    <color name="gray">#f3f3f3</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="primary_material_dark">#ffffff</color>
+    <color name="primary_text_default_material_dark">#000000</color>
+    <color name="background_material_light">#fbfafa</color>
+    <color name="colorButtonNormal">#fefefe</color>
+
+
+    <array name="tab_colors">
+    <item name="tab_1">#455C65</item>
+    <item name="tab_2">#00886A</item>
+    <item name="tab_3">#8B6B62</item>
+    <item name="tab_4">#6C4A42</item>
+    <item name="tab_5">#F63D2B</item>
+    </array>
+
+    <color name="cornflower_blue">#6274e2</color>
+    <color name="cornflower_blue_dark">#303F9F</color>
+    <color name="cornflower_blue_darkest">#2d3a93</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_transparent">#a6efefef</color>
+    <color name="gray_dark">#858585</color>
+    <color name="gray_dark_transparent">#ae858585</color>
+    <color name="gray_darkest">#ae282828</color>
+
+    <color name="black_10">#19000000</color>
+    <color name="ivory">#f8efe6</color>
+    <color name="ivory_dark">#f7e8d9</color>
+    <color name="green">#38be55</color>
+    <color name="green_dark">#2da346</color>
+    <color name="red">#e94f4f</color>
+    <color name="brown">#4e342e</color>
+    <color name="red_dark">#d52029</color>
+
+
+</resources>

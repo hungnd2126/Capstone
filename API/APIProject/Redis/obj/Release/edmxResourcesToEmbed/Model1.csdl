@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CP_TAS_v2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="CPModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="CPModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="CPModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="CPModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="CPModel.AspNetUser" />
+    <EntitySet Name="Categories" EntityType="CPModel.Category" />
+    <EntitySet Name="Cities" EntityType="CPModel.City" />
+    <EntitySet Name="Countries" EntityType="CPModel.Country" />
+    <EntitySet Name="EcommerceWebsites" EntityType="CPModel.EcommerceWebsite" />
+    <EntitySet Name="Images" EntityType="CPModel.Image" />
+    <EntitySet Name="Notifications" EntityType="CPModel.Notification" />
+    <EntitySet Name="Offers" EntityType="CPModel.Offer" />
+    <EntitySet Name="Orders" EntityType="CPModel.Order" />
+    <EntitySet Name="Posts" EntityType="CPModel.Post" />
+    <EntitySet Name="Ratings" EntityType="CPModel.Rating" />
+    <EntitySet Name="sysdiagrams" EntityType="CPModel.sysdiagram" />
+    <EntitySet Name="TrackingOrders" EntityType="CPModel.TrackingOrder" />
+    <EntitySet Name="Transactions" EntityType="CPModel.Transaction" />
+    <EntitySet Name="Trips" EntityType="CPModel.Trip" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="CPModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="CPModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Offers_dbo_AspNetUsers_BuyerId" Association="CPModel.FK_dbo_Offers_dbo_AspNetUsers_BuyerId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Offer" EntitySet="Offers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Offers_dbo_AspNetUsers_TravellerId" Association="CPModel.FK_dbo_Offers_dbo_AspNetUsers_TravellerId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Offer" EntitySet="Offers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_AspNetUsers_BuyerId" Association="CPModel.FK_dbo_Orders_dbo_AspNetUsers_BuyerId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_AspNetUsers_TravellerId" Association="CPModel.FK_dbo_Orders_dbo_AspNetUsers_TravellerId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ratings_dbo_AspNetUsers_UserRatedId" Association="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRatedId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ratings_dbo_AspNetUsers_UserRateId" Association="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRateId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Transactions_dbo_AspNetUsers_UserId" Association="CPModel.FK_dbo_Transactions_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notifications_AspNetUsers" Association="CPModel.FK_Notifications_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Notification" EntitySet="Notifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Posts_AspNetUsers" Association="CPModel.FK_Posts_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Post" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Cities_dbo_Countries_CountryID" Association="CPModel.FK_dbo_Cities_dbo_Countries_CountryID">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Posts_dbo_Cities_BuyFromId" Association="CPModel.FK_dbo_Posts_dbo_Cities_BuyFromId">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Post" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Posts_dbo_Cities_DeliveryToId" Association="CPModel.FK_dbo_Posts_dbo_Cities_DeliveryToId">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Post" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Trips_dbo_Cities_FromCityId" Association="CPModel.FK_dbo_Trips_dbo_Cities_FromCityId">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Trip" EntitySet="Trips" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Trips_dbo_Cities_ToCityId" Association="CPModel.FK_dbo_Trips_dbo_Cities_ToCityId">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Trip" EntitySet="Trips" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EcommerceWebsite_Countries" Association="CPModel.FK_EcommerceWebsite_Countries">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="EcommerceWebsite" EntitySet="EcommerceWebsites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Posts_Countries" Association="CPModel.FK_Posts_Countries">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Post" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Images_dbo_Posts_PostId" Association="CPModel.FK_dbo_Images_dbo_Posts_PostId">
+      <End Role="Post" EntitySet="Posts" />
+      <End Role="Image" EntitySet="Images" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Offers_dbo_Posts_PostId" Association="CPModel.FK_dbo_Offers_dbo_Posts_PostId">
+      <End Role="Post" EntitySet="Posts" />
+      <End Role="Offer" EntitySet="Offers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Offers_dbo_Trips_TripId" Association="CPModel.FK_dbo_Offers_dbo_Trips_TripId">
+      <End Role="Trip" EntitySet="Trips" />
+      <End Role="Offer" EntitySet="Offers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_Offers_OfferId" Association="CPModel.FK_dbo_Orders_dbo_Offers_OfferId">
+      <End Role="Offer" EntitySet="Offers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ratings_dbo_Orders_OrderId" Association="CPModel.FK_dbo_Ratings_dbo_Orders_OrderId">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Transactions_dbo_Orders_OrderId" Association="CPModel.FK_dbo_Transactions_dbo_Orders_OrderId">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrackingOrders_Orders" Association="CPModel.FK_TrackingOrders_Orders">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="TrackingOrder" EntitySet="TrackingOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_Posts" Association="CPModel.FK_Transactions_Posts">
+      <End Role="Post" EntitySet="Posts" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="CPModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="CPModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLoginTime" Type="DateTime" Precision="3" />
+    <Property Name="Activated" Type="Boolean" Nullable="false" />
+    <Property Name="Gender" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+    <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FacebookId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GoogleId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Money" Type="Double" />
+    <Property Name="BuyerScore" Type="Double" />
+    <Property Name="SignalConnect" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TKNL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TravelerScore" Type="Double" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="CPModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="CPModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="Offers" Relationship="CPModel.FK_dbo_Offers_dbo_AspNetUsers_BuyerId" FromRole="AspNetUser" ToRole="Offer" />
+    <NavigationProperty Name="Offers1" Relationship="CPModel.FK_dbo_Offers_dbo_AspNetUsers_TravellerId" FromRole="AspNetUser" ToRole="Offer" />
+    <NavigationProperty Name="Orders" Relationship="CPModel.FK_dbo_Orders_dbo_AspNetUsers_BuyerId" FromRole="AspNetUser" ToRole="Order" />
+    <NavigationProperty Name="Orders1" Relationship="CPModel.FK_dbo_Orders_dbo_AspNetUsers_TravellerId" FromRole="AspNetUser" ToRole="Order" />
+    <NavigationProperty Name="Ratings" Relationship="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRatedId" FromRole="AspNetUser" ToRole="Rating" />
+    <NavigationProperty Name="Ratings1" Relationship="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRateId" FromRole="AspNetUser" ToRole="Rating" />
+    <NavigationProperty Name="Transactions" Relationship="CPModel.FK_dbo_Transactions_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="Transaction" />
+    <NavigationProperty Name="Notifications" Relationship="CPModel.FK_Notifications_AspNetUsers" FromRole="AspNetUser" ToRole="Notification" />
+    <NavigationProperty Name="Posts" Relationship="CPModel.FK_Posts_AspNetUsers" FromRole="AspNetUser" ToRole="Post" />
+    <NavigationProperty Name="AspNetRoles" Relationship="CPModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateUpdated" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CountryID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Country" Relationship="CPModel.FK_dbo_Cities_dbo_Countries_CountryID" FromRole="City" ToRole="Country" />
+    <NavigationProperty Name="Posts" Relationship="CPModel.FK_dbo_Posts_dbo_Cities_BuyFromId" FromRole="City" ToRole="Post" />
+    <NavigationProperty Name="Posts1" Relationship="CPModel.FK_dbo_Posts_dbo_Cities_DeliveryToId" FromRole="City" ToRole="Post" />
+    <NavigationProperty Name="Trips" Relationship="CPModel.FK_dbo_Trips_dbo_Cities_FromCityId" FromRole="City" ToRole="Trip" />
+    <NavigationProperty Name="Trips1" Relationship="CPModel.FK_dbo_Trips_dbo_Cities_ToCityId" FromRole="City" ToRole="Trip" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Cities" Relationship="CPModel.FK_dbo_Cities_dbo_Countries_CountryID" FromRole="Country" ToRole="City" />
+    <NavigationProperty Name="EcommerceWebsites" Relationship="CPModel.FK_EcommerceWebsite_Countries" FromRole="Country" ToRole="EcommerceWebsite" />
+    <NavigationProperty Name="Posts" Relationship="CPModel.FK_Posts_Countries" FromRole="Country" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="EcommerceWebsite">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Url" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <NavigationProperty Name="Country" Relationship="CPModel.FK_EcommerceWebsite_Countries" FromRole="EcommerceWebsite" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="PostId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Post" Relationship="CPModel.FK_dbo_Images_dbo_Posts_PostId" FromRole="Image" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsRead" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_Notifications_AspNetUsers" FromRole="Notification" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="Offer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateUpdated" Type="DateTime" Precision="3" />
+    <Property Name="ShippingFee" Type="Int32" Nullable="false" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="BuyerId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TravellerId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PostId" Type="Int32" Nullable="false" />
+    <Property Name="TripId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_dbo_Offers_dbo_AspNetUsers_BuyerId" FromRole="Offer" ToRole="AspNetUser" />
+    <NavigationProperty Name="AspNetUser1" Relationship="CPModel.FK_dbo_Offers_dbo_AspNetUsers_TravellerId" FromRole="Offer" ToRole="AspNetUser" />
+    <NavigationProperty Name="Post" Relationship="CPModel.FK_dbo_Offers_dbo_Posts_PostId" FromRole="Offer" ToRole="Post" />
+    <NavigationProperty Name="Trip" Relationship="CPModel.FK_dbo_Offers_dbo_Trips_TripId" FromRole="Offer" ToRole="Trip" />
+    <NavigationProperty Name="Orders" Relationship="CPModel.FK_dbo_Orders_dbo_Offers_OfferId" FromRole="Offer" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateUpdated" Type="DateTime" Precision="3" />
+    <Property Name="ShippingFee" Type="Int32" Nullable="false" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="BuyerId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TravellerId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="OfferId" Type="Int32" Nullable="false" />
+    <Property Name="TripId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_dbo_Orders_dbo_AspNetUsers_BuyerId" FromRole="Order" ToRole="AspNetUser" />
+    <NavigationProperty Name="AspNetUser1" Relationship="CPModel.FK_dbo_Orders_dbo_AspNetUsers_TravellerId" FromRole="Order" ToRole="AspNetUser" />
+    <NavigationProperty Name="Offer" Relationship="CPModel.FK_dbo_Orders_dbo_Offers_OfferId" FromRole="Order" ToRole="Offer" />
+    <NavigationProperty Name="Ratings" Relationship="CPModel.FK_dbo_Ratings_dbo_Orders_OrderId" FromRole="Order" ToRole="Rating" />
+    <NavigationProperty Name="Transactions" Relationship="CPModel.FK_dbo_Transactions_dbo_Orders_OrderId" FromRole="Order" ToRole="Transaction" />
+    <NavigationProperty Name="TrackingOrders" Relationship="CPModel.FK_TrackingOrders_Orders" FromRole="Order" ToRole="TrackingOrder" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="BuyFromId" Type="Int32" />
+    <Property Name="DeliveryToId" Type="Int32" Nullable="false" />
+    <Property Name="ShippingFee" Type="Int32" Nullable="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateUpdated" Type="DateTime" Precision="3" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Deposit" Type="Int32" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="LinkWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BuyFromAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DeliveryToAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CountryId" Type="Int32" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_Posts_AspNetUsers" FromRole="Post" ToRole="AspNetUser" />
+    <NavigationProperty Name="City" Relationship="CPModel.FK_dbo_Posts_dbo_Cities_BuyFromId" FromRole="Post" ToRole="City" />
+    <NavigationProperty Name="City1" Relationship="CPModel.FK_dbo_Posts_dbo_Cities_DeliveryToId" FromRole="Post" ToRole="City" />
+    <NavigationProperty Name="Country" Relationship="CPModel.FK_Posts_Countries" FromRole="Post" ToRole="Country" />
+    <NavigationProperty Name="Images" Relationship="CPModel.FK_dbo_Images_dbo_Posts_PostId" FromRole="Post" ToRole="Image" />
+    <NavigationProperty Name="Offers" Relationship="CPModel.FK_dbo_Offers_dbo_Posts_PostId" FromRole="Post" ToRole="Offer" />
+    <NavigationProperty Name="Transactions" Relationship="CPModel.FK_Transactions_Posts" FromRole="Post" ToRole="Transaction" />
+  </EntityType>
+  <EntityType Name="Rating">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="UserRateId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserRatedId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="Point" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRatedId" FromRole="Rating" ToRole="AspNetUser" />
+    <NavigationProperty Name="AspNetUser1" Relationship="CPModel.FK_dbo_Ratings_dbo_AspNetUsers_UserRateId" FromRole="Rating" ToRole="AspNetUser" />
+    <NavigationProperty Name="Order" Relationship="CPModel.FK_dbo_Ratings_dbo_Orders_OrderId" FromRole="Rating" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TrackingOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="Double" />
+    <Property Name="Latitude" Type="Double" />
+    <NavigationProperty Name="Order" Relationship="CPModel.FK_TrackingOrders_Orders" FromRole="TrackingOrder" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="IsSuccess" Type="Boolean" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="PostId" Type="Int32" />
+    <NavigationProperty Name="AspNetUser" Relationship="CPModel.FK_dbo_Transactions_dbo_AspNetUsers_UserId" FromRole="Transaction" ToRole="AspNetUser" />
+    <NavigationProperty Name="Order" Relationship="CPModel.FK_dbo_Transactions_dbo_Orders_OrderId" FromRole="Transaction" ToRole="Order" />
+    <NavigationProperty Name="Post" Relationship="CPModel.FK_Transactions_Posts" FromRole="Transaction" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="Trip">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FromCityId" Type="Int32" Nullable="false" />
+    <Property Name="ToCityId" Type="Int32" Nullable="false" />
+    <Property Name="FromDate" Type="DateTime" Precision="3" />
+    <Property Name="ToDate" Type="DateTime" Precision="3" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateUpdated" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="City" Relationship="CPModel.FK_dbo_Trips_dbo_Cities_FromCityId" FromRole="Trip" ToRole="City" />
+    <NavigationProperty Name="City1" Relationship="CPModel.FK_dbo_Trips_dbo_Cities_ToCityId" FromRole="Trip" ToRole="City" />
+    <NavigationProperty Name="Offers" Relationship="CPModel.FK_dbo_Offers_dbo_Trips_TripId" FromRole="Trip" ToRole="Offer" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Offers_dbo_AspNetUsers_BuyerId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Offer" Role="Offer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Offer">
+        <PropertyRef Name="BuyerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Offers_dbo_AspNetUsers_TravellerId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Offer" Role="Offer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Offer">
+        <PropertyRef Name="TravellerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_AspNetUsers_BuyerId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="BuyerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_AspNetUsers_TravellerId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="TravellerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ratings_dbo_AspNetUsers_UserRatedId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Rating" Role="Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="UserRatedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ratings_dbo_AspNetUsers_UserRateId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Rating" Role="Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="UserRateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Transactions_dbo_AspNetUsers_UserId">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+    <End Type="CPModel.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notifications_AspNetUsers">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="CPModel.Notification" Role="Notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notification">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Posts_AspNetUsers">
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+    <End Type="CPModel.Post" Role="Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Cities_dbo_Countries_CountryID">
+    <End Type="CPModel.Country" Role="Country" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.City" Role="City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Posts_dbo_Cities_BuyFromId">
+    <End Type="CPModel.City" Role="City" Multiplicity="0..1" />
+    <End Type="CPModel.Post" Role="Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="BuyFromId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Posts_dbo_Cities_DeliveryToId">
+    <End Type="CPModel.City" Role="City" Multiplicity="1" />
+    <End Type="CPModel.Post" Role="Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="DeliveryToId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Trips_dbo_Cities_FromCityId">
+    <End Type="CPModel.City" Role="City" Multiplicity="1" />
+    <End Type="CPModel.Trip" Role="Trip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Trip">
+        <PropertyRef Name="FromCityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Trips_dbo_Cities_ToCityId">
+    <End Type="CPModel.City" Role="City" Multiplicity="1" />
+    <End Type="CPModel.Trip" Role="Trip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Trip">
+        <PropertyRef Name="ToCityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EcommerceWebsite_Countries">
+    <End Type="CPModel.Country" Role="Country" Multiplicity="1" />
+    <End Type="CPModel.EcommerceWebsite" Role="EcommerceWebsite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EcommerceWebsite">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Posts_Countries">
+    <End Type="CPModel.Country" Role="Country" Multiplicity="0..1" />
+    <End Type="CPModel.Post" Role="Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Images_dbo_Posts_PostId">
+    <End Type="CPModel.Post" Role="Post" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.Image" Role="Image" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Image">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Offers_dbo_Posts_PostId">
+    <End Type="CPModel.Post" Role="Post" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.Offer" Role="Offer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Offer">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Offers_dbo_Trips_TripId">
+    <End Type="CPModel.Trip" Role="Trip" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.Offer" Role="Offer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trip">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Offer">
+        <PropertyRef Name="TripId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_Offers_OfferId">
+    <End Type="CPModel.Offer" Role="Offer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="OfferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ratings_dbo_Orders_OrderId">
+    <End Type="CPModel.Order" Role="Order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.Rating" Role="Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Transactions_dbo_Orders_OrderId">
+    <End Type="CPModel.Order" Role="Order" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CPModel.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrackingOrders_Orders">
+    <End Type="CPModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="CPModel.TrackingOrder" Role="TrackingOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TrackingOrder">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_Posts">
+    <End Type="CPModel.Post" Role="Post" Multiplicity="0..1" />
+    <End Type="CPModel.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="CPModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="CPModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+</Schema>

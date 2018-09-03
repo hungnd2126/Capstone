@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<data>
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.message.video_call.VideoCallViewModel"/>
+    </data>
+<RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="5"
+              android:background="#ffffffff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/layout_item_avartar"
+        android:layout_weight="5"
+        android:elevation="1dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/call"
+        >
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/CallerName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="150sp"
+        android:gravity="center"
+        android:text="@{viewModel.username}"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+    <RelativeLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@{viewModel.username}"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/callState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=" Đang kết nối"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/answerButton"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:background="@drawable/initiate_call_button"
+                    android:clickable="true"
+                    android:src="@drawable/start_call" />
+
+
+                <ImageButton
+                    android:id="@+id/declineButton"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="17dp"
+                    android:background="@drawable/end_call_button"
+                    android:clickable="true"
+                    android:src="@drawable/hang_up" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

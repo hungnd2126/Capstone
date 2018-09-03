@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.">
+
+    <data>
+
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="vn.baonq.mvvmproject.ui.main.accept_offer.AcceptOfferViewModel" />
+
+
+    </data>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_margin="10dp"
+                    android:background="#CCCCCC" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/avartar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Nguyễn Duy Hùng: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" yêu cầu từ 21/2/2018" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                  android:gravity="center"
+                    android:orientation="horizontal"
+
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_weight="0"
+                        android:background="@color/gray"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="49dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/icons_post" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="     Gửi tin nhắn cho " />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=" Hùng"
+
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/space"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="304dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:src="@drawable/icons_airplane_landing" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Gửi đến" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Hà Nội, VN" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="305dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="54dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:src="@drawable/icons_airplane" />
+
+                        <TextView
+                            android:layout_width="68dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Mua từ " />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Texas, UK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="305dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="54dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:src="@drawable/icons_planner_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Gia trước ngày  " />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="20/3/2018" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="305dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="54dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:src="@drawable/icon_gps" />
+
+                        <TextView
+                            android:layout_width="68dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Mua tại" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="amazon.com" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="305dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="54dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:src="@drawable/icon_shopping_bag" />
+
+                        <TextView
+                            android:layout_width="68dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Số lượng" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="1sp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="#CCCCCC" />
+
+                        <TextView
+                            android:layout_width="68dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:paddingBottom="10dp"
+                            android:text="Comment" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/gray"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Thỏa thuận được gửi"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+</layout>

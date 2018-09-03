@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/btnPayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/cardview_light_background"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="Phương thức thanh toán"
+                android:textColor="#000000"
+                android:textSize="28dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_action_name_back" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <Button
+            android:id="@+id/btnPayout"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:text="Thêm"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="Để bắt đầu, chúng tôi cần thông tin cá nhân và chi tiết thanh toán. Những thông tin trên sẽ không được chia sẻ công khai."
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

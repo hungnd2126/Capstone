@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btnPayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_action_name_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Kiếm tiền qua mỗi chuyến đi !"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Để bắt đầu, chúng tôi cần thông tin cá nhân và chi tiết thanh toán. Những thông tin trên sẽ không được chia sẻ công khai." />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/cardview_light_background" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Nhập số điện thoại xác nhận"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Bằng cách này, đội ngũ TAS và những thành viên trong cộng đồng biết được nếu chúng tôi cần kiểm tra lại thông tin tài khoản hoặc đơn hàng." />
+
+            <EditText
+                android:id="@+id/btnPhoneNumber"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="+ Số điện thoại của bạn" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/cardview_light_background" />
+
+            <Button
+                android:id="@+id/btnPaySMS"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:text="Xác nhận qua tin nhắn"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/cardview_light_background" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Xin hãy nhập số điện thoại của bạn theo định dạng quốc tế. Bắt đầu bắng dâu (+) và mã vùng quốc gia." />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Ví dụ mã vùng Mỹ: +84 XXX XXX XXXX" />
+
+            <!--Cho nay la mot cai link, chinh lai sau-->
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:text="Tìm hiểu thêm về việc xác nhận đơn hàng qua điện thoại."
+                android:textColor="@color/colorBottomNavigationPrimaryDark" />
+            <!---->
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
